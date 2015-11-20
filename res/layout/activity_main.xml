@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/layout_actionbar" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToNextActivity" 
+        android:textColor="@color/white_color"
+        android:layout_margin="10dp"
+        />
+    
+</LinearLayout>
