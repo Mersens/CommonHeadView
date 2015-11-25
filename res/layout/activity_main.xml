@@ -8,4 +8,12 @@
     <include
         android:id="@+id/common_actionbar"
         layout="@layout/layout_actionbar" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="只含有title和右侧按钮的head" />
+    
 </LinearLayout>
