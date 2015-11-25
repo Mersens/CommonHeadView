@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentManager;
 
 public abstract class BaseFragmentActivity extends BaseActivity{
 
-	
 	@Override
 	protected void onCreate(Bundle arg0) { 
 		super.onCreate(arg0);
@@ -28,7 +27,6 @@ public abstract class BaseFragmentActivity extends BaseActivity{
 			@Override
 			public void onClick() {
 				finishActivity();
-				
 			}
 		});
 	}

@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TestFragmentActivity"/>
+        <activity android:name=".ShopFragmentActivity"/>
     </application>
 
 </manifest>

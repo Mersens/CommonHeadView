@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragmentContainer"
-    android:background="@color/white_color"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white_color"
      >
 
-
-    <TextView
-        android:id="@+id/textView1"
+    <TextView 
+        android:id="@+id/toptype"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Fragment" />
+        android:layout_alignParentTop="true"
+        android:textSize="14dp"
+        android:layout_margin="12dp"
+        />
+    
+     <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_below="@id/toptype"
+        android:scrollbars="none"
+        
+         />
 
-</FrameLayout>
+
+
+</RelativeLayout>

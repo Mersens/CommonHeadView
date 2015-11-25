@@ -30,7 +30,7 @@ public class HeadView extends LinearLayout {
 	 *         LEFT--只显示左侧图标 LEFTANDTITLE--只显示左侧图标和标题
 	 */
 	public enum HeaderStyle {
-		DEFAULT, ONLYTITLE, LEFT, LEFTANDTITLE;
+		DEFAULT, ONLYTITLE, LEFT, LEFTANDTITLE, RIGHTANDTITLE;
 	}
 
 	public HeadView(Context context) {
@@ -86,7 +86,31 @@ public class HeadView extends LinearLayout {
 			removeViews();
 			backAndTitleMethod();
 			break;
+		case RIGHTANDTITLE:
+			removeViews();
+			rightandtitle();
+			break;
 		}
+	}
+
+	private void rightandtitle() {
+		// 设置title为可见
+		tv_title.setVisibility(View.VISIBLE);
+		View right_button_view = mInflater.inflate(
+				R.layout.common_head_right_img, null);
+		right_button = (ImageView) right_button_view
+				.findViewById(R.id.right_imageView);
+		// 初始化右侧按钮，并添加到右侧父布局内
+		header_layout_rightview_container.addView(right_button_view);
+		right_button.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// 接口回调
+				if (onrightclicklistener != null) {
+					onrightclicklistener.onClick();
+				}
+			}
+		});
 	}
 
 	/**
@@ -99,23 +123,23 @@ public class HeadView extends LinearLayout {
 
 	@SuppressLint("InflateParams")
 	public void defaultMethod() {
-		//设置title为可见
+		// 设置title为可见
 		tv_title.setVisibility(View.VISIBLE);
 		View left_button_view = mInflater.inflate(
 				R.layout.common_head_left_img, null);
 		left_button = (ImageView) left_button_view.findViewById(R.id.imageView);
-		//初始化左侧按钮，并添加到左侧父布局内
+		// 初始化左侧按钮，并添加到左侧父布局内
 		header_leftview_container.addView(left_button_view);
 		View right_button_view = mInflater.inflate(
 				R.layout.common_head_right_img, null);
 		right_button = (ImageView) right_button_view
 				.findViewById(R.id.right_imageView);
-		//初始化右侧按钮，并添加到右侧父布局内
+		// 初始化右侧按钮，并添加到右侧父布局内
 		header_layout_rightview_container.addView(right_button_view);
 		left_button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//接口回调
+				// 接口回调
 				if (onleftclicklistener != null) {
 					onleftclicklistener.onClick();
 				}
@@ -125,13 +149,12 @@ public class HeadView extends LinearLayout {
 		right_button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//接口回调
+				// 接口回调
 				if (onrightclicklistener != null) {
 					onrightclicklistener.onClick();
 				}
 			}
 		});
-
 	}
 
 	public void tileMethod() {
@@ -139,12 +162,12 @@ public class HeadView extends LinearLayout {
 	}
 
 	public void leftMethod() {
-		//初始化左侧按钮，并添加到左侧父布局内
+		// 初始化左侧按钮，并添加到左侧父布局内
 		View left_button_view = mInflater.inflate(
 				R.layout.common_head_left_img, null);
 		left_button = (ImageView) left_button_view.findViewById(R.id.imageView);
 		header_leftview_container.addView(left_button_view);
-		//添加监听事件
+		// 添加监听事件
 		left_button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -187,6 +210,20 @@ public class HeadView extends LinearLayout {
 			right_button.setBackgroundResource(R.drawable.btn_more);
 		setOnLeftClickListener(onleftclicklistener);
 		setOnRightClickListener(onrightclicklistener);
+	}
+
+	public void setRightAndTitleMethod(String title, int rightsrcid,
+			OnRightClickListener onrightclicklistener) {
+		System.out.println("title===="+title+"----rightsrcid-----"+rightsrcid);
+		if (!TextUtils.isEmpty(title)) {
+			tv_title.setText(title);
+		}
+		if (rightsrcid != 0)
+			right_button.setBackgroundResource(rightsrcid);
+		else
+			right_button.setBackgroundResource(R.drawable.btn_more);
+		  setOnRightClickListener(onrightclicklistener);
+
 	}
 
 	public void setLeftWithTitleViewMethod(int leftsrcid, String title,
