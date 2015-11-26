@@ -79,16 +79,11 @@ public class ShopFragmentActivity extends BaseActivity{
 		}
 	};
 	
+	@SuppressWarnings("deprecation")
 	private void initPager() {
 		goods_pager.setAdapter(shopAdapter);		
 		goods_pager.setOnPageChangeListener(onPageChangeListener);
 	}
-	
-	/**
-	 * OnPageChangeListener<br/>
-	 * 监听ViewPager选项卡变化事的事件
-	 */
-	
 	private OnPageChangeListener onPageChangeListener = new OnPageChangeListener() {
 		@Override
 		public void onPageSelected(int arg0) {
@@ -113,12 +108,7 @@ public class ShopFragmentActivity extends BaseActivity{
 		}
 		@Override
 		public Fragment getItem(int arg0) {
-			Fragment fragment =new CommonFragment();
-			Bundle bundle=new Bundle();
-			String str=titlesName.get(arg0);
-			bundle.putString("name",str);
-			fragment.setArguments(bundle);
-			return fragment;
+			return CommonFragment.getInstance(titlesName.get(arg0));
 		}
 		
 		@Override

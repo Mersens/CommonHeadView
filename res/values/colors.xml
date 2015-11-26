@@ -4,4 +4,6 @@
     <color name="white_color">#ffffff</color>
     <color name="text_color">#888c97</color>
      <color name="gray_line_color">#cccccc</color>
+     <color name="spots_dialog_color">@android:color/holo_blue_dark</color>
+     <color name="dialog_tv_color">#339BB9</color>
 </resources>

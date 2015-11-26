@@ -14,5 +14,4 @@ public class TestFragment extends Fragment {
 			Bundle savedInstanceState) {
 		return inflater.inflate(R.layout.layout_fragment, container,false);
 	}
-
 }

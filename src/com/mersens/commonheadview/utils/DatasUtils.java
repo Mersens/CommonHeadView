@@ -29,15 +29,17 @@ public class DatasUtils {
 	
 	public static DatasUtils getInstance(){
 		if(datasutils==null){
-			datasutils=new DatasUtils();
+			synchronized (DatasUtils.class) {
+				if(datasutils==null){
+					datasutils=new DatasUtils();
+				}
+			}
 		}
 		return datasutils;
-		
 	}
 	
 	public List<String> getDatas(){
 		return new ArrayList<String>(list);
-		
 	}
-
+	
 }

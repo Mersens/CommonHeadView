@@ -7,5 +7,9 @@
     <dimen name="title_size">20dp</dimen>
     <dimen name="common_text_size">18dp</dimen>
     <dimen name="left_title_text_size">15dp</dimen>
-
+    <dimen name="spot_size">6dp</dimen>
+    <dimen name="title_margin">10dp</dimen>
+    <dimen name="progress_margin">22dp</dimen>
+    <dimen name="progress_width">150dp</dimen>
+    <dimen name="text_size">15dp</dimen>
 </resources>

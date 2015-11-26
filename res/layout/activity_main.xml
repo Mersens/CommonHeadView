@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
+    android:layout_height="match_parent"
     android:background="@color/white_color"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical" >
+
     <include
         android:id="@+id/common_actionbar"
         layout="@layout/layout_actionbar" />
@@ -14,6 +14,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="10dp"
         android:text="只含有title和右侧按钮的head" />
-    
+
+    <Button
+        android:id="@+id/progress_show_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progress show login" />
+
+    <Button
+        android:id="@+id/progress_show_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progress show loading" />
+
+    <Button
+        android:id="@+id/dialog_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dialog dimess" />
+
+    <Button
+        android:id="@+id/dialog_dimess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dialog dimess" />
+
 </LinearLayout>
