@@ -18,19 +18,19 @@ import com.mersens.commonheadview.view.HeadView.OnLeftClickListener;
 import com.mersens.commonheadview.view.HeadView.OnRightClickListener;
 
 public class BaseActivity extends FragmentActivity{
-	//ÆÁÄ»¿í¶È
+
 	private int mScreenWidth;
-	//ÆÁÄ»¸ß¶È
+
 	private int mScreenHeight;
 	private  Toast mToast;
 	private Activity activity;
-	//×Ô¶¨ÒåActionBar
+
 	private HeadView mHeadView;
 	@Override
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub
 		super.onCreate(arg0);
-		//½ûÖ¹ÊÖ»úºáÆÁÏÔÊ¾
+		//ï¿½ï¿½Ö¹ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		activity=this;
 		DisplayMetrics metrics=new DisplayMetrics();
@@ -41,7 +41,7 @@ public class BaseActivity extends FragmentActivity{
 
 	/**
 	 * @author Mersens
-	 * setDefaultViewMethod--Ä¬ÈÏ·½·¨ÏÔÊ¾×ó²àÍ¼±ê£¬ÓÒ²àÍ¼±êºÍ±êÌâ
+	 * setDefaultViewMethod--Ä¬ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Í¼ï¿½ê£¬ï¿½Ò²ï¿½Í¼ï¿½ï¿½Í±ï¿½ï¿½ï¿½
 	 * @param leftsrcid
 	 * @param title
 	 * @param rightsrcid
@@ -57,7 +57,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * setRightAndTitleMethod--ÏÔÊ¾ÓÒ²à°´Å¥ºÍ±êÌâ
+	 * setRightAndTitleMethod--ï¿½ï¿½Ê¾ï¿½Ò²à°´Å¥ï¿½Í±ï¿½ï¿½ï¿½
 	 * @param title
 	 * @param rightsrcid
 	 * @param onRightClickListener
@@ -71,7 +71,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * setLeftWithTitleViewMethod--ÏÔÊ¾×ó²à°´Å¥ºÍ±êÌâ
+	 * setLeftWithTitleViewMethod--ï¿½ï¿½Ê¾ï¿½ï¿½à°´Å¥ï¿½Í±ï¿½ï¿½ï¿½
 	 * @param leftsrcid
 	 * @param title
 	 * @param onleftclicklistener
@@ -84,7 +84,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * setOnlyTileViewMethod--Ö»ÏÔÊ¾title
+	 * setOnlyTileViewMethod--Ö»ï¿½ï¿½Ê¾title
 	 * @param title
 	 */
 	public void setOnlyTileViewMethod(String title) {
@@ -95,7 +95,7 @@ public class BaseActivity extends FragmentActivity{
 
 	/**
 	 * @author Mersens
-	 * setLeftViewMethod--Ö»ÏÔÊ¾×ó²à°´Å¥
+	 * setLeftViewMethod--Ö»ï¿½ï¿½Ê¾ï¿½ï¿½à°´Å¥
 	 * @param leftsrcid
 	 * @param onleftclicklistener
 	 */
@@ -108,7 +108,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * ÏÔÊ¾ÌáÊ¾ÐÅÏ¢£¬¿ÉÒÔÊÇ×Ö·û´®×ÊÔ´
+	 * ï¿½ï¿½Ê¾ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ô´
 	 * @param text
 	 */
 	public void ShowToast(String text) {
@@ -122,7 +122,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * ÏÔÊ¾ÌáÊ¾ÐÅÏ¢£¬¿ÉÒÔÊÇ×ÊÔ´ÎÄ¼þ
+	 * ï¿½ï¿½Ê¾ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½Ä¼ï¿½
 	 * @param srcid
 	 */
 	public void ShowToast(int srcid) {
@@ -137,7 +137,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * Í¨¹ýNetworkInfoÊµÀý£¬ÅÐ¶ÏÍøÂç×´Ì¬£¬ÊÇ·ñÓÐ¿ÉÓÃÍøÂç
+	 * Í¨ï¿½ï¿½NetworkInfoÊµï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @return 
 	 */
 	public boolean isNetworkAvailable() {
@@ -157,7 +157,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * »ñÈ¡ÆÁÄ»µÄ¿í¶È
+	 * ï¿½ï¿½È¡ï¿½ï¿½Ä»ï¿½Ä¿ï¿½ï¿½
 	 * @return mScreenWidth
 	 */
 	public int getScreenWidth(){
@@ -166,7 +166,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * »ñÈ¡ÆÁÄ»µÄ¸ß¶È
+	 * ï¿½ï¿½È¡ï¿½ï¿½Ä»ï¿½Ä¸ß¶ï¿½
 	 * @return mScreenHeight
 	 */
 	public int getScreenHeight(){
@@ -175,7 +175,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * intentAction--½øÐÐÌø×ª
+	 * intentAction--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ª
 	 * @param context
 	 * @param cls
 	 */
@@ -188,7 +188,7 @@ public class BaseActivity extends FragmentActivity{
 	
 	/**
 	 * @author Mersens
-	 * finishActivity()--½áÊøActivity
+	 * finishActivity()--ï¿½ï¿½ï¿½ï¿½Activity
 	 */
 	public void finishActivity(){
 		finish();

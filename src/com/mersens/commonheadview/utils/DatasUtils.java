@@ -8,23 +8,23 @@ public class DatasUtils {
 	private List<String> list;
 	private DatasUtils(){
 		list=new ArrayList<String>();
-		list.add("常用分类");
-		list.add("潮流女装");
-		list.add("品牌男装");
-		list.add("内衣配饰");
-		list.add("家用电器");
-		list.add("手机数码");
-		list.add("电脑办公");
-		list.add("个护化妆");
-		list.add("母婴频道");
-		list.add("食物生鲜");
-		list.add("酒水饮料");
-		list.add("家居家纺");
-		list.add("运动户外");
-		list.add("整车车品");
-		list.add("鞋靴箱包");
-		list.add("居家生活");
-		list.add("音像制品");
+		list.add("甯哥敤鍒嗙被");
+		list.add("娼祦濂宠");
+		list.add("鍝佺墝鐢疯");
+		list.add("鍐呰。閰嶉グ");
+		list.add("瀹剁敤鐢靛櫒");
+		list.add("鎵嬫満鏁扮爜");
+		list.add("鐢佃剳鍔炲叕");
+		list.add("涓姢鍖栧");
+		list.add("姣嶅┐棰戦亾");
+		list.add("椋熺墿鐢熼矞");
+		list.add("閰掓按楗枡");
+		list.add("瀹跺眳瀹剁汉");
+		list.add("杩愬姩鎴峰");
+		list.add("鏁磋溅杞﹀搧");
+		list.add("闉嬮澊绠卞寘");
+		list.add("灞呭鐢熸椿");
+		list.add("闊冲儚鍒跺搧");
 	}
 	
 	public static DatasUtils getInstance(){

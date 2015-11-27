@@ -9,36 +9,111 @@
         android:id="@+id/common_actionbar"
         layout="@layout/layout_actionbar" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:text="只含有title和右侧按钮的head" />
-
-    <Button
-        android:id="@+id/progress_show_login"
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="progress show login" />
+        android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/progress_show_loading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="progress show loading" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/dialog_show"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="dialog dimess" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="只含有title和右侧按钮的head"
+                android:textSize="18dp" />
 
-    <Button
-        android:id="@+id/dialog_dimess"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="dialog dimess" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="8dp"
+                android:background="#cacaca" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:text="common style"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/progress_show_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="progress show login" />
+
+            <Button
+                android:id="@+id/progress_show_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="progress show loading" />
+
+            <Button
+                android:id="@+id/dialog_exit_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="dialog exit show" />
+
+            <Button
+                android:id="@+id/dialog_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="dialog hint" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="8dp"
+                android:background="#cacaca" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:text="iphone style"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="iphone style loading" />
+
+            <Button
+                android:id="@+id/btn_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="iphone style hint" />
+
+            <Button
+                android:id="@+id/btn_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="iphone style success" />
+
+            <Button
+                android:id="@+id/btn_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="iphone style error" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

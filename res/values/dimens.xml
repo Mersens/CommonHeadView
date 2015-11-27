@@ -1,9 +1,8 @@
 <resources>
 
-    <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="actionbar_hight">42dp</dimen>
+    <dimen name="actionbar_hight">50dp</dimen>
     <dimen name="title_size">20dp</dimen>
     <dimen name="common_text_size">18dp</dimen>
     <dimen name="left_title_text_size">15dp</dimen>
@@ -12,4 +11,18 @@
     <dimen name="progress_margin">22dp</dimen>
     <dimen name="progress_width">150dp</dimen>
     <dimen name="text_size">15dp</dimen>
+    <!-- padding -->
+    <dimen name="padding_svprogresshuddefault">15dp</dimen>
+    <!-- 窗口最小宽度 -->
+    <dimen name="size_minwidth_svprogresshuddefault">120dp</dimen>
+    <!-- 图片宽高 -->
+    <dimen name="size_image_bigloading">80dp</dimen>
+    <!-- 图片宽高 -->
+    <dimen name="size_image_smallloading">60dp</dimen>
+    <!-- 圆角 -->
+    <dimen name="radius_svprogresshuddefault">20px</dimen>
+    <!-- 提示的文字大小 -->
+    <dimen name="textSize_svprogresshuddefault_msg">15sp</dimen>
+    <dimen name="margintop_svprogresshuddefault_msg">10dp</dimen>
+
 </resources>

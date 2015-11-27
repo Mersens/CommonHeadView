@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="actionbar_color">#51BCFA</color>
     <color name="white_color">#ffffff</color>
     <color name="text_color">#888c97</color>
-     <color name="gray_line_color">#cccccc</color>
-     <color name="spots_dialog_color">@android:color/holo_blue_dark</color>
-     <color name="dialog_tv_color">#339BB9</color>
+    <color name="gray_line_color">#cccccc</color>
+    <color name="spots_dialog_color">@android:color/holo_blue_dark</color>
+    <color name="dialog_tv_color">#339BB9</color>
+    <color name="base_color_text_black">#3e3e39</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="base_color_text_white">#ffffff</color>
+    <color name="dialog_color_title">#cacaca</color>
+
+    <!-- 覆盖颜色 -->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="bgColor_overlay_black">#95000000</color>
+    <!-- 窗口背景颜色 -->
+    <color name="bgColor_svprogressdefaultview">@android:color/white</color>
+    <!-- 标题颜色 -->
+    <color name="textColor_svprogresshuddefault_msg">@android:color/holo_blue_dark</color>
+    <color name="roundColor_svprogresshuddefault">#e5e5e5</color>
+    <color name="roundProgressColor_svprogresshuddefault">@android:color/black</color>
+
 </resources>

@@ -42,7 +42,7 @@ public class ShopFragmentActivity extends BaseActivity{
 		goods_pager=(ViewPager) findViewById(R.id.goods_pager);
 		layout_titles=(LinearLayout) findViewById(R.id.layout_titles);
 		shopAdapter=new ShopAdapter(getSupportFragmentManager());
-		setLeftWithTitleViewMethod(R.drawable.ic_menu_back,"产品分类",new OnLeftClickListener() {
+		setLeftWithTitleViewMethod(R.drawable.ic_menu_back,"浜у搧鍒嗙被",new OnLeftClickListener() {
 			@Override
 			public void onClick() {
 				finishActivity();
@@ -125,7 +125,7 @@ public class ShopFragmentActivity extends BaseActivity{
 			}
 		}
 		textViews.get(id).setBackgroundResource(android.R.color.white);
-		textViews.get(id).setTextColor(0xffff5d5e);
+		textViews.get(id).setTextColor(getResources().getColor(R.color.dialog_tv_color));
 	}
 	
 
