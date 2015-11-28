@@ -20,7 +20,7 @@ public class GridAdapter extends BaseAdapter{
 		this.list=list;
 		inflater=LayoutInflater.from(context);
 	}
-
+ 
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
@@ -56,40 +56,40 @@ public class GridAdapter extends BaseAdapter{
 		{
 			Type type=list.get(position);
 			holder.name.setText(type.getName());
-			if(type.getName().contains("µçÄÔ°ì¹«")){
+			if(type.getName().contains("ï¿½ï¿½ï¿½Ô°ì¹«")){
 				holder.icon.setBackgroundResource(R.drawable.diannao);
 			}
-			else if(type.getName().contains("¸ö»¤»¯×±")){
+			else if(type.getName().contains("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×±")){
 				holder.icon.setBackgroundResource(R.drawable.huazhuang);
 			}
-			else if(type.getName().contains("Ð¬Ñ¥Ïä°ü")){
+			else if(type.getName().contains("Ð¬Ñ¥ï¿½ï¿½ï¿½")){
 				holder.icon.setBackgroundResource(R.drawable.nvxie);
 			}
-			else if(type.getName().contains("³±Á÷Å®×°")){
+			else if(type.getName().contains("ï¿½ï¿½ï¿½ï¿½Å®×°")){
 				holder.icon.setBackgroundResource(R.drawable.nvzhuang);
 			}
-			else if(type.getName().contains("Í¼Êé")){
+			else if(type.getName().contains("Í¼ï¿½ï¿½")){
 				holder.icon.setBackgroundResource(R.drawable.shuji);
 			}
-			else if(type.getName().contains("Íæ¾ßÀÖÆ÷")){
+			else if(type.getName().contains("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")){
 				holder.icon.setBackgroundResource(R.drawable.wanju);
 			}
-			else if(type.getName().contains("ÒôÏñÖÆÆ·")){
+			else if(type.getName().contains("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·")){
 				holder.icon.setBackgroundResource(R.drawable.yingshi);
 			}
-			else if(type.getName().contains("³£ÓÃ·ÖÀà")){
+			else if(type.getName().contains("ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½")){
 				holder.icon.setBackgroundResource(R.drawable.yiyong);
 			}
-			else if(type.getName().contains("Æ·ÅÆÄÐ×°")){
+			else if(type.getName().contains("Æ·ï¿½ï¿½ï¿½ï¿½×°")){
 				holder.icon.setBackgroundResource(R.drawable.nanzhuang);
 			}
-			else if(type.getName().contains("ÄÚÒÂÅäÊÎ")){
+			else if(type.getName().contains("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")){
 				holder.icon.setBackgroundResource(R.drawable.neiyi);
 			}
-			else if(type.getName().contains("¼ÒÓÃµçÆ÷")){
+			else if(type.getName().contains("ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½")){
 				holder.icon.setBackgroundResource(R.drawable.dianqi);
 			}
-			else if(type.getName().contains("ÊÖ»úÊýÂë")){
+			else if(type.getName().contains("ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½")){
 				holder.icon.setBackgroundResource(R.drawable.shouji);
 			}
 			else{

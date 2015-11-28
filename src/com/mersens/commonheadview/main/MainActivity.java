@@ -5,12 +5,10 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-
 import com.mersens.commonheadview.view.DialogTips;
 import com.mersens.commonheadview.view.HeadView.OnRightClickListener;
 import com.mersens.commonheadview.view.SVProgressHUD;
 import com.mersens.commonheadview.view.SpotsDialog;
-
 public class MainActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +43,7 @@ public class MainActivity extends BaseActivity {
 		findViewById(R.id.dialog_exit_show).setOnClickListener(new OnClickListener() {
 			
 			@Override
-			public void onClick(View v) {
+			public void onClick(View v) {//
 				// TODO Auto-generated method stub
 				DialogTips dialog = new DialogTips(MainActivity.this, "退出", "是否退出软件？",
 						"确定", true, true);
@@ -65,12 +63,10 @@ public class MainActivity extends BaseActivity {
 		});
 		
 		findViewById(R.id.btn_loading).setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				SVProgressHUD.showWithStatus(MainActivity.this, "加载中...");
-				
 			}
 		});
 		
@@ -100,7 +96,6 @@ public class MainActivity extends BaseActivity {
 				 SVProgressHUD.showErrorWithStatus(MainActivity.this, "提交失败！");
 			}
 		});
-		
 	}
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event)
@@ -112,8 +107,6 @@ public class MainActivity extends BaseActivity {
                 return false;
             }
         }
-
         return super.onKeyDown(keyCode, event);
-
     }
 }
